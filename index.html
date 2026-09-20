@@ -3,118 +3,501 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ziham Mahmud | Developer Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+
+  <!-- ===== SEO ===== -->
+  <title>Ziham Mahmud — CSE Undergraduate &amp; Cybersecurity Enthusiast</title>
+  <meta name="description" content="Portfolio of Ziham Mahmud, a Computer Science & Engineering undergraduate and cybersecurity enthusiast from Bangladesh, showcasing academic projects and growing technical skills." />
+  <meta name="author" content="Ziham Mahmud" />
+  <link rel="canonical" href="https://zihammahmud.github.io/" />
+
+  <!-- Open Graph / social sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Ziham Mahmud — CSE Undergraduate & Cybersecurity Enthusiast" />
+  <meta property="og:description" content="Personal portfolio of Ziham Mahmud: academic projects, skills, and learning journey in cybersecurity and software development." />
+  <meta property="og:url" content="https://zihammahmud.github.io/" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Ziham Mahmud — CSE Undergraduate & Cybersecurity Enthusiast" />
+  <meta name="twitter:description" content="Personal portfolio of Ziham Mahmud: academic projects, skills, and learning journey in cybersecurity and software development." />
+
+  <!-- Favicon: ZM monogram -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+  <!-- Fonts: progressive enhancement with system fallbacks -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+<base target="_blank">
 </head>
 <body>
 
-  <!-- Navigation -->
-  <nav class="navbar">
-    <div class="logo">Ziham Mahmud</div>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <!-- ==================== NAVIGATION ==================== -->
+  <header class="site-header" id="site-header">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a href="#home" class="wordmark" aria-label="Ziham Mahmud — home">
+        <span class="wordmark-badge">ZM</span>
+        <span class="wordmark-name">Ziham&nbsp;Mahmud</span>
+      </a>
 
-  <!-- Hero / Introduction -->
-  <header class="hero">
-    <img src="profile.jpeg" alt="Ziham Mahmud" class="profile-img" />
-    <h1>Hello, I'm <span class="highlight">Ziham Mahmud</span></h1>
-    <p>Cybersecurity Enthusiast & CSE Undergraduate</p>
-    <a href="#projects" class="btn">View My Work</a>
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#home"    class="nav-link is-active" data-section="home">Home</a></li>
+        <li><a href="#about"   class="nav-link" data-section="about">About</a></li>
+        <li><a href="#skills"  class="nav-link" data-section="skills">Skills</a></li>
+        <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+        <li><a href="#education" class="nav-link" data-section="education">Education</a></li>
+        <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- About Section -->
-  <section id="about" class="section">
-    <h2>About Me</h2>
-    <p>
-      As a Computer Science undergraduate, I approach cybersecurity through a builder’s mindset. Rather than just studying theoretical concepts, I focus on understanding security engineering by writing code, analyzing networks, and testing systems hands-on. I spend my time exploring cybersecurity principles, getting hands-on with Kali Linux, developing security tools, and building long-term technical projects.
-    </p>
-  </section>
+  <main id="main">
 
-  <!-- Projects Section -->
-  <section id="projects" class="section">
-    <h2>Projects</h2>
-    <div class="project-grid">
-      
-      <div class="project-card">
-        <h3>Project One</h3>
-        <p>A web application built using HTML, CSS, and JavaScript with interactive features.</p>
-        <div class="tags"><span>HTML</span> <span>CSS</span> <span>JS</span></div>
-        <a href="https://github.com/zihammahmud?tab=repositories" target="_blank" rel="noopener noreferrer" class="card-link">View Code &rarr;</a>
+    <!-- ==================== HERO ==================== -->
+    <section class="hero section" id="home" aria-labelledby="hero-title">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-grid"></div>
+        <div class="hero-glow hero-glow-a"></div>
+        <div class="hero-glow hero-glow-b"></div>
       </div>
 
-      <div class="project-card">
-        <h3>Algorithm Visualizer</h3>
-        <p>An implementation of graph traversals and tree algorithms with interactive output.</p>
-        <div class="tags"><span>Java</span> <span>Data Structures</span></div>
-        <a href="https://github.com/zihammahmud?tab=repositories" target="_blank" rel="noopener noreferrer" class="card-link">View Code &rarr;</a>
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="hero-eyebrow reveal" data-reveal>
+            <span class="status-dot" aria-hidden="true"></span>
+            Open to learning opportunities
+          </p>
+          <h1 class="hero-title reveal" data-reveal data-reveal-delay="80">
+            Hi, I'm <span class="text-gradient">Ziham Mahmud</span>
+          </h1>
+          <p class="hero-subtitle reveal" data-reveal data-reveal-delay="160">
+            CSE Undergraduate &amp; Cybersecurity Enthusiast
+          </p>
+          <p class="hero-lede reveal" data-reveal data-reveal-delay="240">
+            I'm a Computer Science &amp; Engineering student who is fascinated by
+            how systems work — and how they can be protected. I spend my time
+            learning programming, exploring Linux, and building academic projects
+            while steadily growing my foundation in cybersecurity and software
+            development.
+          </p>
+          <div class="hero-actions reveal" data-reveal data-reveal-delay="320">
+            <a href="#projects" class="btn btn-primary">
+              View Projects
+              <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+            <a href="#contact" class="btn btn-ghost">Contact Me</a>
+          </div>
+        </div>
+
+        <!--
+          PROFILE PHOTO PLACEHOLDER
+          To use your real photo: drop your image into assets/ (e.g. assets/profile.jpg),
+          then replace the .profile-placeholder div below with:
+          <img class="profile-photo" src="assets/profile.jpg"
+               alt="Portrait of Ziham Mahmud" width="320" height="320" />
+        -->
+        <div class="hero-visual reveal" data-reveal data-reveal-delay="200">
+          <div class="profile-frame">
+            <div class="profile-placeholder" role="img" aria-label="Placeholder for a profile photo of Ziham Mahmud">
+              <span class="profile-initials" aria-hidden="true">ZM</span>
+              <span class="profile-caption">Your photo here</span>
+            </div>
+            <div class="profile-ring" aria-hidden="true"></div>
+          </div>
+        </div>
       </div>
 
+      <a href="#about" class="scroll-hint" aria-label="Scroll down to the About section">
+        <span class="scroll-hint-track" aria-hidden="true"><span class="scroll-hint-thumb"></span></span>
+      </a>
+    </section>
+
+    <!-- ==================== ABOUT ==================== -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="section-head reveal" data-reveal>
+          <p class="section-kicker">01 — About</p>
+          <h2 class="section-title" id="about-title">A student building a strong foundation</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-card glass reveal" data-reveal>
+            <p>
+              I'm Ziham Mahmud, an undergraduate student of Computer Science &amp;
+              Engineering at Green University of Bangladesh. I'm genuinely curious
+              about cybersecurity — how networks, systems, and applications behave,
+              and what it takes to keep them safe.
+            </p>
+            <p>
+              Right now I'm focused on the fundamentals: writing programs in Python,
+              Java, and C/C++, getting comfortable on Linux, and applying what I
+              learn through academic projects. I see cybersecurity as a long-term
+              craft, and I'm taking it step by step — learning honestly, building
+              small things, and improving with each one.
+            </p>
+            <p class="about-note">
+              This portfolio documents where I am today: a learner with real projects,
+              real coursework, and a clear direction.
+            </p>
+          </div>
+          <div class="about-facts reveal" data-reveal data-reveal-delay="120">
+            <div class="fact glass">
+              <span class="fact-label">Currently</span>
+              <span class="fact-value">CSE Undergraduate</span>
+            </div>
+            <div class="fact glass">
+              <span class="fact-label">Focus</span>
+              <span class="fact-value">Cybersecurity &amp; Software Development</span>
+            </div>
+            <div class="fact glass">
+              <span class="fact-label">University</span>
+              <span class="fact-value">Green University of Bangladesh</span>
+            </div>
+            <div class="fact glass">
+              <span class="fact-label">Mindset</span>
+              <span class="fact-value">Learning by building</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS ==================== -->
+    <section class="section section-alt" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="section-head reveal" data-reveal>
+          <p class="section-kicker">02 — Skills</p>
+          <h2 class="section-title" id="skills-title">Tools I'm learning to work with</h2>
+          <p class="section-sub">Technologies I use in my coursework and personal practice. I'm continuously improving each of them.</p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card glass reveal" data-reveal>
+            <div class="skill-card-head">
+              <span class="skill-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </span>
+              <h3>Programming</h3>
+            </div>
+            <ul class="tag-list">
+              <li class="tag">Python</li>
+              <li class="tag">Java</li>
+              <li class="tag">C / C++</li>
+            </ul>
+          </article>
+
+          <article class="skill-card glass reveal" data-reveal data-reveal-delay="100">
+            <div class="skill-card-head">
+              <span class="skill-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              </span>
+              <h3>Web</h3>
+            </div>
+            <ul class="tag-list">
+              <li class="tag">HTML5</li>
+              <li class="tag">CSS3</li>
+            </ul>
+          </article>
+
+          <article class="skill-card glass reveal" data-reveal data-reveal-delay="200">
+            <div class="skill-card-head">
+              <span class="skill-icon" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg>
+              </span>
+              <h3>Tools &amp; Platforms</h3>
+            </div>
+            <ul class="tag-list">
+              <li class="tag">Git</li>
+              <li class="tag">GitHub</li>
+              <li class="tag">Linux</li>
+              <li class="tag">Kali Linux <span class="tag-note">(basic level)</span></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROJECTS ==================== -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-head reveal" data-reveal>
+          <p class="section-kicker">03 — Projects</p>
+          <h2 class="section-title" id="projects-title">Academic projects I've built</h2>
+          <p class="section-sub">Learning projects from my coursework — each one taught me something new.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card glass reveal" data-reveal>
+            <div class="project-visual" aria-hidden="true">
+              <div class="project-glyph">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+              </div>
+            </div>
+            <div class="project-body">
+              <span class="project-label">Academic Project</span>
+              <h3 class="project-name">Sentinel AI</h3>
+              <p class="project-desc">
+                An academic cybersecurity project exploring an intelligent cyber
+                defense and attack simulation platform — built as a learning and
+                demonstration project.
+              </p>
+              <ul class="tag-list" aria-label="Technologies">
+                <li class="tag tag-sm">Cybersecurity</li>
+                <li class="tag tag-sm">Academic</li>
+              </ul>
+              <div class="project-actions">
+                <button class="btn btn-primary btn-sm" data-modal-open="modal-sentinel">
+                  View Details
+                </button>
+                <a class="btn btn-ghost btn-sm" href="https://github.com/zihammahmud/Sentinel-AI" target="_blank" rel="noopener noreferrer">
+                  <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.69 1.25 3.34.95.1-.74.4-1.25.72-1.53-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11.1 11.1 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.77 1.05.77 2.12 0 1.53-.01 2.76-.01 3.14 0 .3.2.67.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card glass reveal" data-reveal data-reveal-delay="120">
+            <div class="project-visual" aria-hidden="true">
+              <div class="project-glyph">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2.4"/><path d="M12 7.5v6"/><path d="M12 13.5 8 17"/><path d="M12 13.5l4 3.5"/><path d="M8 10.5 5.5 13"/><path d="M16 10.5 18.5 13"/></svg>
+              </div>
+            </div>
+            <div class="project-body">
+              <span class="project-label">Academic Project</span>
+              <h3 class="project-name">Stickman Fighter</h3>
+              <p class="project-desc">
+                A 2D stickman fighting game developed in Java as an academic
+                project — my hands-on introduction to game logic and interactive
+                applications.
+              </p>
+              <ul class="tag-list" aria-label="Technologies">
+                <li class="tag tag-sm">Java</li>
+                <li class="tag tag-sm">2D Game</li>
+                <li class="tag tag-sm">Academic</li>
+              </ul>
+              <div class="project-actions">
+                <button class="btn btn-primary btn-sm" data-modal-open="modal-stickman">
+                  View Details
+                </button>
+                <a class="btn btn-ghost btn-sm" href="https://github.com/zihammahmud/2D-Fighting-Game" target="_blank" rel="noopener noreferrer">
+                  <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.69 1.25 3.34.95.1-.74.4-1.25.72-1.53-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11.1 11.1 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.77 1.05.77 2.12 0 1.53-.01 2.76-.01 3.14 0 .3.2.67.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EDUCATION ==================== -->
+    <section class="section section-alt" id="education" aria-labelledby="education-title">
+      <div class="container">
+        <div class="section-head reveal" data-reveal>
+          <p class="section-kicker">04 — Education</p>
+          <h2 class="section-title" id="education-title">Education</h2>
+        </div>
+
+        <ol class="timeline">
+          <li class="timeline-item reveal" data-reveal>
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <article class="timeline-card glass">
+              <span class="project-label">Current</span>
+              <h3>BSc in Computer Science &amp; Engineering (CSE)</h3>
+              <p class="timeline-institution">Green University of Bangladesh</p>
+              <p class="timeline-desc">
+                Undergraduate studies covering programming fundamentals, data
+                structures, computer networks, operating systems, and software
+                development — with a growing personal focus on cybersecurity.
+              </p>
+            </article>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT ==================== -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section-head reveal" data-reveal>
+          <p class="section-kicker">05 — Contact</p>
+          <h2 class="section-title" id="contact-title">Let's get in touch</h2>
+          <p class="section-sub">
+            Whether it's about my projects, studies, or just tech in general —
+            I'd be happy to hear from you. The most reliable way to reach me is email.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-card glass reveal" data-reveal>
+            <h3 class="contact-card-title">Email me</h3>
+            <p class="contact-email-row">
+              <a class="contact-email" href="mailto:zihammahmud.mf@gmail.com">zihammahmud.mf@gmail.com</a>
+              <button class="copy-btn" id="copy-email" type="button" aria-label="Copy email address">
+                <svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                <span class="copy-btn-text">Copy</span>
+              </button>
+              <span class="copy-feedback" id="copy-feedback" role="status" aria-live="polite"></span>
+            </p>
+            <p class="contact-note">
+              I usually reply when I'm free between classes — thanks for your patience.
+            </p>
+            <a class="btn btn-primary" href="mailto:zihammahmud.mf@gmail.com?subject=Hello%20Ziham">
+              Send an email
+              <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+            </a>
+          </div>
+
+          <div class="contact-card glass reveal" data-reveal data-reveal-delay="120">
+            <h3 class="contact-card-title">Find me online</h3>
+            <ul class="social-list">
+              <li>
+                <a class="social-link" href="https://github.com/zihammahmud" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile: zihammahmud">
+                  <span class="social-icon" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.69 1.25 3.34.95.1-.74.4-1.25.72-1.53-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11.1 11.1 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.77 1.05.77 2.12 0 1.53-.01 2.76-.01 3.14 0 .3.2.67.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+                  </span>
+                  <span class="social-text"><strong>GitHub</strong><small>@zihammahmud</small></span>
+                </a>
+              </li>
+              <li>
+                <a class="social-link" href="https://x.com/zihammahmud_mf" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter) profile: zihammahmud_mf">
+                  <span class="social-icon" aria-hidden="true">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 1.15h3.68l-8.04 9.19L24 22.85h-7.41l-5.8-7.58-6.64 7.58H.47l8.6-9.83L0 1.15h7.59l5.24 6.93 6.07-6.93zm-1.29 19.5h2.04L6.49 3.24H4.3l13.31 17.41z"/></svg>
+                  </span>
+                  <span class="social-text"><strong>X (Twitter)</strong><small>@zihammahmud_mf</small></span>
+                </a>
+              </li>
+              <li>
+                <a class="social-link" href="https://www.instagram.com/ziham.mahmud/" target="_blank" rel="noopener noreferrer" aria-label="Instagram profile: ziham.mahmud">
+                  <span class="social-icon" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.6" cy="6.4" r="0.9" fill="currentColor" stroke="none"/></svg>
+                  </span>
+                  <span class="social-text"><strong>Instagram</strong><small>@ziham.mahmud</small></span>
+                </a>
+              </li>
+              <li>
+                <a class="social-link" href="https://www.facebook.com/zihammahmud.mf" target="_blank" rel="noopener noreferrer" aria-label="Facebook profile: zihammahmud.mf">
+                  <span class="social-icon" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.09 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.7 4.53-4.7 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.95.93-1.95 1.89v2.26h3.32l-.53 3.49h-2.79V24C19.61 23.09 24 18.1 24 12.07z"/></svg>
+                  </span>
+                  <span class="social-text"><strong>Facebook</strong><small>zihammahmud.mf</small></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="wordmark-badge">ZM</span>
+        <div>
+          <p class="footer-name">Ziham Mahmud</p>
+          <p class="footer-tagline">Learning to build. Learning to secure.</p>
+        </div>
+      </div>
+      <nav class="footer-social" aria-label="Social links">
+        <a href="https://github.com/zihammahmud" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.69 1.25 3.34.95.1-.74.4-1.25.72-1.53-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11.1 11.1 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.77 1.05.77 2.12 0 1.53-.01 2.76-.01 3.14 0 .3.2.67.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+        </a>
+        <a href="https://x.com/zihammahmud_mf" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+          <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 1.15h3.68l-8.04 9.19L24 22.85h-7.41l-5.8-7.58-6.64 7.58H.47l8.6-9.83L0 1.15h7.59l5.24 6.93 6.07-6.93zm-1.29 19.5h2.04L6.49 3.24H4.3l13.31 17.41z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/ziham.mahmud/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.6" cy="6.4" r="0.9" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="https://www.facebook.com/zihammahmud.mf" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+          <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.1 4.39 23.09 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.7 4.53-4.7 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.95.93-1.95 1.89v2.26h3.32l-.53 3.49h-2.79V24C19.61 23.09 24 18.1 24 12.07z"/></svg>
+        </a>
+      </nav>
+      <div class="footer-meta">
+        <p>&copy; <span id="year">2026</span> Ziham Mahmud. Built with care.</p>
+      </div>
     </div>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills" class="section">
-    <h2>Skills</h2>
-    <ul class="skills-list">
-      <li>Python</li>
-      <li>Java</li>
-      <li>C / C++</li>
-      <li>HTML5 & CSS3</li>
-      <li>Git & GitHub</li>
-      <li>Linux / Kali Linux</li>
-      <li>Data Structures & Algorithms</li>
-    </ul>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="section">
-    <h2>Get In Touch</h2>
-    <p>Feel free to reach out for collaborations, project discussions, or networking.</p>
-    
-    <div class="social-links">
-      <!-- Email -->
-      <a href="mailto:zihammahmud.mf@gmail.com" class="btn social-btn">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 6.013-9.518-6.013h19.036zm-19.518 14v-11.817l10 6.328 10-6.328v11.817h-20z"/>
-        </svg>
-        Email Me
-      </a>
-
-      <!-- GitHub -->
-      <a href="https://github.com/zihammahmud" target="_blank" rel="noopener noreferrer" class="btn social-btn">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-        </svg>
-        GitHub
-      </a>
-
-      <!-- LinkedIn -->
-      <a href="https://www.linkedin.com/in/zihammahmud/" target="_blank" rel="noopener noreferrer" class="btn social-btn">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.239-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-        </svg>
-        LinkedIn
-      </a>
-
-      <!-- Facebook -->
-      <a href="https://www.facebook.com/zihammahmud" target="_blank" rel="noopener noreferrer" class="btn social-btn">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
-        </svg>
-        Facebook
-      </a>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2026 Ziham Mahmud. All rights reserved.</p>
   </footer>
 
+  <!-- Back to top -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+  </button>
+
+  <!-- ==================== MODALS ==================== -->
+  <div class="modal" id="modal-sentinel" role="dialog" aria-modal="true" aria-labelledby="modal-sentinel-title" hidden>
+    <div class="modal-backdrop" data-modal-close></div>
+    <div class="modal-panel glass" role="document">
+      <button class="modal-close" data-modal-close aria-label="Close dialog">
+        <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+      <span class="project-label">Academic Project</span>
+      <h3 class="modal-title" id="modal-sentinel-title">Sentinel AI</h3>
+      <p class="modal-desc">
+        Sentinel AI is an academic cybersecurity project focused on an intelligent
+        cyber defense and attack simulation platform. It was developed as a
+        learning and demonstration project to explore how defensive and offensive
+        security concepts can be modeled in a controlled, simulated environment.
+      </p>
+      <p class="modal-desc modal-desc-sub">
+        It is a student project created for educational purposes — not a
+        production-grade security product.
+      </p>
+      <h4 class="modal-subhead">Context</h4>
+      <ul class="tag-list">
+        <li class="tag tag-sm">Cybersecurity</li>
+        <li class="tag tag-sm">Attack &amp; defense simulation</li>
+        <li class="tag tag-sm">Academic / learning project</li>
+      </ul>
+      <div class="modal-actions">
+        <a class="btn btn-primary" href="https://github.com/zihammahmud/Sentinel-AI" target="_blank" rel="noopener noreferrer">
+          <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.69 1.25 3.34.95.1-.74.4-1.25.72-1.53-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11.1 11.1 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.77 1.05.77 2.12 0 1.53-.01 2.76-.01 3.14 0 .3.2.67.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+          Open GitHub Repository
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-stickman" role="dialog" aria-modal="true" aria-labelledby="modal-stickman-title" hidden>
+    <div class="modal-backdrop" data-modal-close></div>
+    <div class="modal-panel glass" role="document">
+      <button class="modal-close" data-modal-close aria-label="Close dialog">
+        <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+      <span class="project-label">Academic Project</span>
+      <h3 class="modal-title" id="modal-stickman-title">Stickman Fighter</h3>
+      <p class="modal-desc">
+        Stickman Fighter is a 2D fighting game developed in Java as an academic
+        project. Building it was a hands-on way to learn how interactive programs
+        are structured — from handling user input and game states to rendering
+        characters and managing basic game logic.
+      </p>
+      <p class="modal-desc modal-desc-sub">
+        A coursework project focused on learning, kept simple and honest.
+      </p>
+      <h4 class="modal-subhead">Technologies</h4>
+      <ul class="tag-list">
+        <li class="tag tag-sm">Java</li>
+        <li class="tag tag-sm">2D game development</li>
+      </ul>
+      <div class="modal-actions">
+        <a class="btn btn-primary" href="https://github.com/zihammahmud/2D-Fighting-Game" target="_blank" rel="noopener noreferrer">
+          <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.75 2.69 1.25 3.34.95.1-.74.4-1.25.72-1.53-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11.1 11.1 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.77 1.05.77 2.12 0 1.53-.01 2.76-.01 3.14 0 .3.2.67.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+          Open GitHub Repository
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js" defer></script>
 </body>
 </html>
